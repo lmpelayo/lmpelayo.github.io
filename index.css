@@ -1,0 +1,19 @@
+﻿
+		h1 {color: blue; text-align:center;}
+		h2 {color: light-blue; text-align:center;}
+		h3 {color: white;}
+		img{
+			height:625px;
+			float: right;
+  			margin:20px;
+			-webkit-column-span:all;
+            		-moz-column-span:all;
+            		column-span:all;
+		}		
+		#tarjeta_titulo {display:block; margin:auto;}
+		main {
+            		-webkit-column-count:2;
+            		-moz-column-count:2;
+            		column-count:2;
+        	}
+		
