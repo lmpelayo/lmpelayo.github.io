@@ -1,19 +1,41 @@
-﻿
-		h1 {color: blue; text-align:center;}
+﻿		html, body { margin:0; padding:0; border:none; }
+		h1 {
+			color: blue; text-align:center;
+			-webkit-column-span:1;
+            		-moz-column-span:1;
+            		column-span:1;
+		}
 		h2 {color: light-blue; text-align:center;}
 		h3 {color: white;}
 		img{
-			height:625px;
-			float: right;
-  			margin:20px;
-			-webkit-column-span:all;
-            		-moz-column-span:all;
-            		column-span:all;
-		}		
-		#tarjeta_titulo {display:block; margin:auto;}
-		main {
+			display:block;	
+			height:auto;
+			max-width:100%;
+			margin-top:.5em;
+  			margin-bottom:.5em;
+		}
+				
+		div{
+			display:block;	
+			height:auto;
+			max-width:100%;
+			margin-top:.5em;
+  			margin-bottom:.5em;
+		}
+		 main{
             		-webkit-column-count:2;
             		-moz-column-count:2;
             		column-count:2;
-        	}
-		
+
+	            	-moz-column-gap: 1em;
+	    		-webkit-column-gap: 1em;
+	    		column-gap: 1em;
+
+	    		-moz-column-rule: 1px solid #bbb;
+	    		-webkit-column-rule: 1px solid #bbb;
+	    		column-rule: 1px solid #bbb;
+
+            		-moz-column-width: 140px;	        
+	    		-webkit-column-width: 140px;
+	    		column-width: 140px;
+        }
