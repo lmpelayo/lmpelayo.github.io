@@ -14,5 +14,15 @@
 			margin-top:.5em;
   			margin-bottom:.5em;
 		}
-		
-		
+		nav {
+			padding:0px 10px;
+		}
+		#tarjeta_titulo {
+			width:650px;
+		}
+		#tarjeta_texto {
+			width:650px;
+		}
+		body {
+		background-image:url("imagen2.jpg");
+		}
