@@ -1,4 +1,4 @@
-﻿		html, body { margin:0; padding:0; border:none; }
+﻿
 		h1 {
 			color: blue; text-align:center;
 			-webkit-column-span:1;
@@ -14,18 +14,5 @@
 			margin-top:.5em;
   			margin-bottom:.5em;
 		}
-				
-		.column {
-			float:left;
-			width: 50%;
-		}
-		@media screen and (max-width:600px) {
-			.column {
-				width: 100%;
-			}
-		}
-		.row:after {
-			content:"";
-			display:table;
-			clear:both;
-		}
+		
+		
