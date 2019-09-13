@@ -5,35 +5,34 @@ body{
     color: white;
 }
 footer{
-    display: static;
+    display: fixed;
     height: auto;
     margin: auto;
     width: 100%;
     color: #000080;
-    background-color: white;
     text-align: center;
 }
 
 heading{
-    position: fixed;
-    scroll-margin-top: 0;
+    position: sticky;
+    position:  -webkit-sticky;
+    top: 0;
     padding: 0;
-    background-color: yellow;
     z-index: 10;
     width: 100%;
     text-align: center;
     height: auto;
 }
+
 #Inicio {
+    overflow: auto;
     width: 70vw;
     height: 40w;
     background-color: white;
-    margin-top: 0;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 1vw;
-    position: relative;
-    top: 5vw;
 }
 #texto-presentacion{
     text-align: left justify;
@@ -88,6 +87,7 @@ ul{
     text-align: center;
     margin:0;
     width: 100%;
+    background-color: yellow;
 }
 li {
     display: inline-block;
@@ -101,6 +101,7 @@ a {
     text-decoration: none;
     color: #000080;
     padding: 1em;
+    background-color: yellow;
 }
 a:hover{
     color: white;
