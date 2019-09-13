@@ -5,10 +5,13 @@ body{
     color: white;
 }
 footer{
+    display: static;
+    height: auto;
+    margin: auto;
     width: 100%;
     color: #000080;
     background-color: white;
-    margin:0;
+    text-align: center;
 }
 
 heading{
@@ -23,13 +26,12 @@ heading{
 }
 #Inicio {
     width: 70vw;
-    height: 45vw;
+    height: 40w;
     background-color: white;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     padding: 1vw;
-    box-shadow: 5vw;
     position: relative;
     top: 5vw;
 }
@@ -53,7 +55,7 @@ heading{
 }
 #texto-about{
     float: left;
-    width: 60%;
+    max-width: 60%;
     position: block;
     top: 20px;
     right: 20px;
@@ -84,13 +86,15 @@ heading{
 }
 ul{
     text-align: center;
+    margin:0;
+    width: 100%;
 }
 li {
     display: inline-block;
-    width: 80px;
+    width: 15em;
     padding: 1em;    
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
     font-family: Courier;
 }
 a {
@@ -131,4 +135,6 @@ button {
     border-radius: 0;
     font-family: 'Courier New';
     font-size: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
 }
