@@ -6,7 +6,7 @@ body{
     overflow-x: hidden;
 }
 footer{
-    position: fixed;
+    display: fixed;
     height: auto;
     margin: auto;
     max-width: 100%;
@@ -16,19 +16,19 @@ footer{
 
 heading{
     position: sticky;
-    position: -webkit-sticky;
-    overflow: hidden;
+    position:  -webkit-sticky;
     top: 0;
     padding: 0;
     z-index: 10;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
+    height: auto;
 }
 
 #Inicio {
     width: 70vw;
     height: 40vw;
-    margin-top: 5vw;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -107,7 +107,7 @@ a {
 a:hover{
     color: white;
     background-color: #000080;
-    padding: 10px;
+    padding: 1em;
     border-radius: 50px;
 }
 h1{
