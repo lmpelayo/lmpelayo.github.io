@@ -6,7 +6,7 @@ body{
     overflow-x: hidden;
 }
 footer{
-    display: fixed;
+    position: fixed;
     height: auto;
     margin: auto;
     max-width: 100%;
@@ -16,37 +16,35 @@ footer{
 
 heading{
     position: sticky;
-    position:  -webkit-sticky;
+    position: -webkit-sticky;
+    overflow: hidden;
     top: 0;
     padding: 0;
     z-index: 10;
-    max-width: 100%;
+    width: 100%;
     text-align: center;
-    height: auto;
 }
 
 #Inicio {
-    position: relative;
     width: 70vw;
-    height: 40w;
-    background-color: white;
-    margin-top: auto;
+    height: 40vw;
+    margin-top: 5vw;
     margin-left: auto;
     margin-right: auto;
-    padding: 1vw;
+    display: block;
 }
-#texto-presentacion{
-    text-align: left justify;
-    position: absolute;
-
+.presentacion{
+    position: relative;
+    right: 2vw;
+    padding-bottom: 2vw;
 }
 #portrait{
-    float: right;
-    margin: auto;
     position: relative;
-    top: 9vw;
-    right: 7vw;
-    width: 31%;
+    display: block;
+    margin: 0 1vw 1vw 0;
+    max-height: 15vw;
+    float: right;
+    z-index: 9;
 }
 #about{
     display: inline-block;
@@ -64,6 +62,7 @@ heading{
 }
 #perro{
     position: relative;
+    display: inline-flex;
     top: 20px;
     right: 10%;
     bottom: 20px;
@@ -84,7 +83,6 @@ heading{
     display: block;
     margin: 0 auto;
     width: 50%;
-
 }
 ul{
     text-align: center;
@@ -109,12 +107,18 @@ a {
 a:hover{
     color: white;
     background-color: #000080;
-    padding: 1em;
+    padding: 10px;
     border-radius: 50px;
 }
 h1{
+    position: static;
     color: #000080;
     font-size: 10vw;
+    display: block;
+    margin: 1vw 1vw 0vw 1vw;
+    bottom: 10vw;
+    padding-top: 5vw;
+    background-color: white;
 }
 h3, h5{
     color: yellow;
@@ -139,6 +143,6 @@ button {
     border-radius: 0;
     font-family: 'Courier New';
     font-size: 1.5vw;
-    margin-left: auto;
+    margin-left: 1vw;
     margin-right: auto;
 }
