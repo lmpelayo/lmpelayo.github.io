@@ -3,6 +3,7 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color:#000080;
     color: white;
+    overflow-x: hidden;
 }
 footer{
     display: fixed;
