@@ -48,7 +48,7 @@ heading{
 }
 #about{
     display: inline-block;
-    margin: 50px;
+    margin: 0;
     width: 100%;
     height: 30%;
     margin-top: 10vw;
@@ -72,9 +72,9 @@ heading{
 }
 #Proyectos{
     margin-top: 10vw;
-    margin: 50px;
+    margin: 0;
     width: 100%;
-    display: inline-block;
+    display: block;
     text-align: left;
     height: 30%
 }
