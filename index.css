@@ -8,7 +8,7 @@ footer{
     display: fixed;
     height: auto;
     margin: auto;
-    width: 100%;
+    max-width: 100%;
     color: #000080;
     text-align: center;
 }
@@ -19,7 +19,7 @@ heading{
     top: 0;
     padding: 0;
     z-index: 10;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     height: auto;
 }
