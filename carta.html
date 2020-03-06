@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodie's Paradise</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/bc0ef1d975.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body class="container bg-danger">
+        <nav id="cabecera" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><span class="badge badge-danger navbar-brand"><i class="fas fa-utensils"></i></span>Foodie's Paradise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active"href="carta.html"><i class="fas fa-book-open"></i>  Nuestra carta</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="ofertas.html"><i class="fas fa-euro-sign"></i> Ofertas</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="localizacion.html"><i class="fas fa-map-signs"></i>  ¿Dónde estamos?</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="contacto.html"><i class="fas fa-envelope"></i>  Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="cuerpo" class="row bg-light col-12 mx-auto">
+            <div class="text-left col-12">
+                <a class="nav-link text-secondary mt-5" href="index.html"><h1 class="h1 text-center"><span class="badge badge-danger p-3"><i class="fas fa-utensils"></i></span>&emsp13;Foodie's Paradise</h1></a>
+                <div class="row row-cols-1 m-5">
+                    <div class="col-12 col-6-lg">
+                        <div class="col-12 btn mx-auto" onclick="mostrarEntrantes()"><h4 class="h4 text-center">Para empezar</h4></div>
+                        <hr class="bg-danger">
+                        <ol id="entrantes">
+                            <li>Baos con crujiente de langostino.</li>
+                            <li>Sushi de pez mantequilla.</li>
+                            <li>Patatas fritas al estilo belga.</li>
+                            <li>Croquetas de cocido.</li>
+                            <li>Tempura de corazones de alcachofa.</li>
+                        </ol>
+                    </div>
+                    <div class="col-12 col-6-lg">
+                        <div class="col-12 btn mx-auto" onclick="mostrarPrincipales()"><h4 class="h4 text-center">Para seguir</h4></div>
+                        <hr class="bg-danger">
+                        <ol id="principales">
+                            <li>Hamburguesa <em>Meat Lovers.</em></li>
+                            <li>Pad thai con pollo de corral.</li>
+                            <li>Arepa reina pepiada.</li>
+                            <li>Tacos al pastor.</li>
+                            <li>Tonkotsu ramen.</li>
+                            <li>Costillar a la brasa con salsa chimichurri.</li>
+                        </ol>
+                    </div>
+                    <div class="col-12 col-6-lg">
+                        <div class="col-12 btn mx-auto" onclick="mostrarPostres()"><h4 class="h4 text-center">Un dulce final</h4></div>
+                        <hr class="bg-danger">
+                        <ol id="postres">
+                            <li>Brownie casero.</li>
+                            <li>Tarta de la abuela.</li>
+                            <li>Quesada tradicional.</li>
+                        </ol>
+                    </div>
+                    <div class="col-12 col-6-lg">
+                        <div class="col-12 btn mx-auto" onclick="mostrarBebidas()"><h4 class="h4 text-center">Y de beber</h4></div>
+                        
+                        <hr class="bg-danger">
+                        <ol id="bebidas">
+                            <li>Cervezas artesanas.</li>
+                            <li>Vinos regionales</li>
+                            <li>Refrescos.</li>
+                            <li>Cócteles caseros.</li>
+                        </ol>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="row bg-dark col-12 mx-auto">
+            <div class="col-12 col-md-6 text-center text-light p-3 mt-3 font-italic">
+                <p>Si te apasiona la comida <br><a class="font-weight-bolder text-light" href="localizacion.html">ven a visitarnos</a></p>
+            </div>
+            <div class="col-12 col-md-6 text-center text-light p-3 mt-3 font-italic">
+                <p>¿Quieres organizar un evento para grupos? <br><a class="font-weight-bolder text-light" href="contacto.html">Contacta con nosotros</a></p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="application/javascript">
+            $('ol').not('#entrantes').hide();
+            function mostrarEntrantes(){
+                $('ol').not('#entrantes').slideUp();
+                $('#entrantes').slideDown();
+            }
+            function mostrarPrincipales(){
+                $('ol').not('#principales').slideUp();
+                $('#principales').slideDown();
+            }
+            function mostrarPostres(){
+                $('ol').not('#postres').slideUp();
+                $('#postres').slideDown();
+            }
+            function mostrarBebidas(){
+                $('ol').not('#bebidas').slideUp();
+                $('#bebidas').slideDown();
+            }
+        </script>
+    </body>
+</html>

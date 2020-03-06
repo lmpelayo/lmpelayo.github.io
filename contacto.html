@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodie's Paradise</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/bc0ef1d975.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body class="container bg-danger">
+        <nav id="cabecera" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><span class="badge badge-danger navbar-brand"><i class="fas fa-utensils"></i></span>Foodie's Paradise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="text-secondary nav-link"href="carta.html"><i class="fas fa-book-open"></i>  Nuestra carta</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="ofertas.html"><i class="fas fa-euro-sign"></i> Ofertas</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="localizacion.html"><i class="fas fa-map-signs"></i>  ¿Dónde estamos?</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html"><i class="fas fa-envelope"></i>  Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="cuerpo" class="row bg-light col-12 mx-auto">
+            <div class="col-12 text-center my-5 mx-auto"><h4 class="h4 text-danger">¿Tienes alguna duda? Consúltanos.</h4></div>
+            <form action="http://miservidor.com/form" method="post" class="col-12 mx-auto">
+                <div class="row mx-auto">
+                        <div class="form-group col-12 col-lg-4 mb-2 mb-lg-0"id="nom">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" class="form-control" name="nombre" required>
+                    </div>
+                    <div id="apel"class="form-group col-12 col-lg-8">
+                        <label for="apellidos">Apellidos:</label>
+                        <input id="apellidos" class="form-control" type="text" name="apellidos">
+                    </div>
+                </div>
+                
+                <div class="row mx-auto">
+                    <div id="mail" class="form-group col-12 col-lg-6 mb-2 mb-lg-0">
+                        <label for="email">Email:</label>
+                        <input id="email" class="form-control" type="text" name="email">
+                    </div>
+                    <div id="phone" class="form-group col-12 col-lg-6">
+                        <label for="tel">Teléfono:</label>
+                        <input id="tel" type="text"  class="form-control" name="telefono" value="+34 ">
+                    </div>
+                </div>
+                <div id="opciones" class="col-12 form-group">
+                    <label for="mot">Motivo de la consulta:</label>
+                    <select id="mot" class="form-control" name="motivo">
+                        <option value="1">Realizar una reserva</option>
+                        <option value="2">Pedir información</option>
+                        <option value="3">Presentar una queja o felicitación</option>
+                    </select>
+                </div>
+                <div id="txtarea" class="col-12 form-group">
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" class="form-control" name="text" cols="50" rows="10"></textarea>
+                </div>
+                <div id="sendBton" class="col-12 my-4 text-center">
+                    <input type="button" class="btn btn-danger"id="sendButton" value="Enviar">
+                </div>
+            </form> 
+            
+        </div>
+        <footer class="row bg-dark col-12 mx-auto">
+            <div class="col-12 col-md-6 text-center text-light p-3 mt-3 font-italic">
+                <p>Si te apasiona la comida <br><a class="font-weight-bolder text-light" href="localizacion.html">ven a visitarnos</a></p>
+            </div>
+            <div class="col-12 col-md-6 text-center text-light p-3 mt-3 font-italic">
+                <p>¿Quieres organizar un evento para grupos? <br><a class="font-weight-bolder text-light" href="contacto.html">Contacta con nosotros</a></p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
